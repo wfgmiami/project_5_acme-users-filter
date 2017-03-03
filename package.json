@@ -1,0 +1,29 @@
+{
+  "name": "project_5_acme-users-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev":"DATABASE_UR=postgres://localhost/acme_users_filter nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfgmiami/project_5_acme-users-filter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wfgmiami/project_5_acme-users-filter/issues"
+  },
+  "homepage": "https://github.com/wfgmiami/project_5_acme-users-filter#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.0",
+    "faker": "^4.1.0",
+    "pg": "^6.1.2",
+    "sequelize": "^3.30.2",
+    "swig": "^1.4.2"
+  }
+}
