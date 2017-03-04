@@ -1,0 +1,6 @@
+<ul class="nav nav-tabs">
+  {% for key, value in filtered %}
+    <li><a href="/user/filter/{{key}}">{{key}}({{value}})</a></li>
+  {% endfor %}
+</ul>
+<br>

@@ -10,7 +10,6 @@ router.get('/',(req,res,next)=>{
     .then( filtered => res.render('index', { users: users, filtered: filtered }))
   })
   .catch(next);
-
 })
 
 router.get('/user/filter/:letter', (req,res,next)=>{

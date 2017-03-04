@@ -28,7 +28,6 @@ const seed = ()=> {
     users.map(user => User.create(user))
   ]))
   .catch(e => console.log(e))
-
 }
 
 module.exports = {

@@ -10,32 +10,8 @@
       <button class="btn btn-danger">Regenerate Users</button>
     </form>
 
-    <ul class="nav nav-tabs">
-      {% for key, value in filtered %}
-        <li><a href="/user/filter/{{key}}">{{key}}({{value}})</a></li>
-      {% endfor %}
-    </ul>
-    <br>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for user in users %}
-        <tr>
-          <td>{{ user.fname }}</td>
-          <td>{{ user.lname }}</td>
-          <td>{{ user.email }}</td>
-          <td>({{ user.lat }}, {{ user.lng }})</td>
-        </tr>
-        {% endfor %}
-      </tbody>
+    {% include '_filter.html' with { filtered: filtered } %}
+    {% include '_users.html' with { user: user } %}
 
   </div>
 </body>
